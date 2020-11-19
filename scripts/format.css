@@ -1,0 +1,760 @@
+div.head {
+margin: -10px  0 0 -10px;
+width: 101.5%;
+background-image:url('../images/background.png');
+background-repeat:no-repeat; 
+height:140px;
+position:fixed;
+z-index:40;
+}
+
+div.head2 { /* yellow background*/
+background-color:#fefcd7;
+margin: -10px  0 0 -10px;
+width: 101.5%;
+position:fixed;
+top:145px;
+}
+
+div.head4 {	/* registered header */
+background-color:#fefcd7;
+margin: -13px 0 -10px 0;
+width: 101.5%;
+position:fixed;
+top:140px;
+z-index:10;
+height:45px;
+}
+
+
+div.head3 {  /* white background */
+background-color:white;
+margin: -10px 0 -10px 0;
+width: 80.5%;
+opacity:1;
+position:relative;
+top:190px;
+left:10.5%;
+}
+
+div.head5 {  /* white background */
+background-color:#fefcd7;
+margin: -10px 0 -10px 0;
+width: 80.5%;
+opacity:1;
+position:relative;
+top:190px;
+left:10.5%;
+}
+
+div.mainbottom {
+margin: -10px -10px -10px -10px;
+height: 300px;
+z-index:100;
+width:105.5%;
+position: fixed;
+top:440px;
+left:-20px;
+background-image:url('../images/footer2.png');
+background-repeat:no-repeat; 
+}
+
+div.editbar{
+background-color:#fefcd7;
+width:100%;
+height: 23px;
+position:relative;
+top: 0px;
+
+}
+
+div.notif{
+
+
+}
+
+bodyheader{
+	font-family:bebas;
+	font-size:24px;
+	position: relative;
+	top:5px;
+	left:10.5%;
+	color: #000;
+}
+
+searchheader{
+	font-family:bebas;
+	font-size:24px;
+	position: relative;
+	top:150px;
+	left: 500px;
+	color: #000;
+}
+
+/* description in every page */
+desc{
+	font-family: Segoe UI;
+	font-size: 12px;
+	position: relative;
+	color: #000;
+}
+
+form {
+	display: inline;
+}
+
+/* eto yung modules sa header ng bawat page */
+.modulemenu ul {
+	font-family: Segoe UI;
+	font-size: 11.5px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.modulemenu ul li { display: block; position: relative; float: left; }
+.modulemenu li ul { display: none }
+.modulemenu ul li a {
+	font-family: Segoe UI;
+	font-size: 11.5px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 55px 100px 10px 0;
+	margin-top: 20px;
+	white-space: nowrap;
+	opacity: 1;
+}
+.modulemenu ul li a:hover { background: transparent; opacity: 0.5}
+.modulemenu li:hover ul { display: block; position: absolute;}
+.modulemenu li:hover li { float: none;}
+.modulemenu li:hover a { background: transparent;}
+.modulemenu li:hover li a:hover { background: transparent;}
+/* END */
+
+/* para sa inventory (assets and materials) */
+.dropv, 
+.dropv ul {
+	font-family: Segoe UI;
+	font-weight: lighter;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #71B238;
+}
+.dropv ul li { display: none; position: relative; float: center; }
+.dropv li ul { display: none; }
+.dropv ul li a {
+	font-family: Segoe UI;
+	font-weight: lighter;
+	font-size: 11.5px;
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-top: 1px solid #ffffff;
+	padding: 0 5px -15px 5px;
+	background: #2C5463;
+	white-space: nowrap;
+}
+.dropv ul li a:hover {background: #71B238; }
+.dropv li:hover ul { display: block; position: absolute; }
+.dropv li:hover li { display: block; float: none; font-size: 11px; }
+.dropv li:hover li a:hover { display: block;background: #71B238; }		
+/* END */
+	
+/* table na ginagamit natin pangdisplay ng tables sa db */	
+.hovertable {
+	font-family: verdana;
+	font-size:11px;
+	color: black;
+	border: none;
+	border-bottom:1px solid gray;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	
+}
+.hovertable th {
+	background-color:white;
+	border-bottom:1px solid gray;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	padding: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.hovertable tr {
+	background: white;
+	border: none;
+}
+.hovertable td {
+	font-family: verdana;
+	font-size:10.5px;
+	height: 10px;
+	padding: 8px;
+	border: none;
+}
+/* END */
+
+/* slow hover effect */
+.slowhover { 
+	-webkit-transition: all 0.7s ease; 
+	-moz-transition: all 0.7s ease; 
+	-o-transition: all 0.7s ease;
+} 
+.slowhover:hover {} 
+.slowhover img{ float: left; margin: 0 15px; }
+/* END */
+
+/* slideshow */
+.headerimg{ 
+	background-position: center top; 
+	background-repeat: no-repeat;
+	width:100%; 
+	height:585px; 
+	position:absolute; 
+}
+
+
+
+#headernav-outer { 
+	position:relative; 
+	top:450px; 
+	margin:0 auto; 
+	width:960px; 
+}
+
+#headernav { 
+	padding-left:450px;
+	z-index:101;
+}
+
+.btn { 
+	height:32px; 
+	width:32px; 
+	float:left;
+	cursor:pointer;
+}
+
+#back { background-image:url("../images/btn_back.png"); }
+#next { background-image:url("../images/btn_next.png"); }
+#control { background-image:url("../images/btn_pause.png"); }
+
+
+#headertxt { 
+	width:960px; 
+	margin:100px 0 0 90px; 
+	clear:both; 
+	position:relative; 
+	top:250px; 
+}
+
+#firstline { 
+	background-color: #d6e3b5; 
+	opacity: 0.8; 
+	color:#333; 
+	font-size:40px; 
+	padding:4px 13px 7px; 
+	float:left; 
+	display:block; 
+}
+
+#secondline { 
+	background-color: #d6e3b5; 
+	opacity: 0.8;  
+	color:#ed1b24; 
+	text-decoration:none; 
+	font-size:60px; 
+	padding:0 13px 10px; 
+	float:left; 
+	display:block; 
+	clear:both; 
+}
+
+#secondline:hover { text-decoration:underline; color:#7F000C; }
+
+.pictured{ 
+	background-color:#ed1b24; 
+	color:#d6e3b5; 
+	font-size:12px; 
+	padding:9px 16px; 
+	text-transform:uppercase; 
+	float:left; 
+	display:block; 
+	clear:both; 
+	margin-top:10px; 
+}
+
+.pictured a { 
+	font-size:16px; 
+	font-style:italic; 
+	letter-spacing:0; 
+	text-transform:none; 
+	color:#d6e3b5; 
+	text-decoration:none; 
+}
+
+.pictured a:hover { text-decoration:underline; }
+/* END */
+
+/* footer at main page */
+div.mainbottom {
+margin: -10px -10px -10px -10px;
+height: 300px;
+z-index:100;
+width:105.5%;
+position: fixed;
+top:480px;
+left:-20px;
+background-image:url('../images/footer2.png');
+background-repeat:no-repeat; 
+}
+
+/* fonts sa main page */
+footer1 {
+	font-family: bebas;
+	font-size: 18px;
+	color: #fefcd7;
+	position: relative;
+	top: 130px;
+	left: 5%;
+}
+
+footer2 {
+	font-family: Segoe UI;
+	font-size: 12px;
+	color: #fefcd7;
+	position: relative;
+	top: 160px;
+	left: 2.3%;
+}
+
+/* log in box & sign up box START*/
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	width: 100%; height: 100%;
+	opacity: 0.6;
+	z-index: 20;
+}
+
+/*log in*/
+.login-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+/*sign up*/
+.signup-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 40%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+fieldset { 
+	border:none; 
+}
+
+form.signin .textbox label { 
+	display:block;
+}
+
+form.signin .textbox span { 
+	display:block;
+}
+
+form.signin p, form.signin span { 
+	color:#999; 
+	font-size:11px; 
+} 
+
+form.signin .textbox input { 
+	background:#666666; 
+	border-bottom:1px solid #333;
+	border-left:1px solid #000;
+	border-right:1px solid #333;
+	border-top:1px solid #000;
+	color:#fff; 
+	font:13px bebas;
+	padding: 6px 6px 4px;
+	width:200px;
+}
+
+form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+/* log in box & sign up box END*/
+
+.addresident-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+.editresident-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+.addasset-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+.addmat-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+    background:white;
+    width: 100%;
+	height: 765px;
+    -background:#000666;
+    margin: 0 auto;
+	position:relative;
+}
+
+/* accordion pane */
+#accordion .pane {
+    border-width:12 2px;
+    display:none;
+    height:900px;
+    padding:10px;
+    color:black;
+    font-size:12px;
+background-color:white;
+}
+
+#accordion .subpane {
+    border-width:12 2px;
+    display:none;
+    height:750px;
+    padding:10px;
+    color:black;
+    font-size:12px;
+background-color:white;
+}
+
+/* accordion header */
+#accordion h2 {
+    background:black;
+    line-height: 24px;
+    font-size:17px;
+	font-family:bebas;
+    margin:0;
+    padding:1px 1px;
+    font-weight:normal;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+	background-color:#71B238;
+}
+
+/* currently active header */
+#accordion h2.current {
+    cursor:default;
+    background-color:#71B238;
+}
+
+#accordion h3 {
+    background:black;
+    line-height: 13px;
+    margin:0;
+    padding:1px 1px;
+    font-size:12px;
+    font-weight:normal;
+    border:1px solid #fff;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+	background-color:#71B238;
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+    font-weight:normal;
+    margin:0;
+    font-size:10px;
+    color:yellow;
+}
+
+#accordion h4 {
+    background:black;
+    margin:0;
+    padding:5px 5px;
+    line-height: 20px;
+    font-size:14px;
+	font-family:Segoe UI;	
+    font-weight:normal;
+    border:1px solid #fff;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+	background-color:#71B238;
+}
+
+#accordion h5 {
+    background:black;
+    margin:0;
+    padding:5px 5px;
+    line-height: 20px;
+    font-size:14px;
+	font-family:Segoe UI;	
+    font-weight:normal;
+    border:1px solid #fff;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+	background-color:#71B238;
+}
+
+.bubble img {
+    float:left;
+    width:70px;
+    height:70px;
+    border:3px solid #000000;
+    border-radius:10px
+                  }
+.bubble-content {
+   position:relative;
+   float:left;
+   margin-left:12px;
+   width:400px;
+   padding:0px 20px;
+   border-radius:10px;
+   background-color:white;
+   box-shadow:1px 1px 5px rgba(0,0,0,.2);
+   }
+.bubble {
+     margin-top:20px;
+     }
+.point {
+   border-top:10px solid transparent;
+   border-bottom:10px solid transparent;
+          border-right: 12px solid white;
+   position:absolute;
+   left:-10px;
+   top:12px;
+   } 
+
+.clearfix:after {
+      visibility:hidden;
+      display:block;
+      font-size:0;
+      content: ".";
+      clear:both;
+      height:0;
+      line-height:
+      }
+.clearfix {
+      display: inline-block;
+      }
+* html .clearfix {
+         height: 1%;
+         }
+
+/* CALENDAR START */
+.calendar th {
+	background-color:white;
+	border-bottom:1px solid gray;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	padding: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.calendar tr {
+	background: white;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	border-top:1px solid gray;
+}
+.calendar td {
+	font-family: verdana;
+	vertical-align: top;
+	font-size:15px;
+	height: 100px;
+	padding: 8px;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	border-top:1px solid gray;
+}
+
+.mask2 {
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	width: 100%; height: 100%;
+	opacity: 0.6;
+	z-index: 20;
+}
+
+.addactivity-popup {
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 40%; left: 40%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+/* CALENDAR END */		 
+
+.addevent-popup {
+	display: none;
+	z-index: 99999;
+	background: #333;
+	border: 2px solid #333;
+	position: fixed;
+	top: 50%; left: 50%;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+		-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+		-webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+}
+
+eventheader{
+	font-family: bebas;
+	font-size: 24px;
+	position: relative;
+	color: #000;
+}
+
+/* CALENDAR START */
+.calendar th {
+	background-color:white;
+	border-bottom:1px solid gray;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	padding: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.calendar tr {
+	background: white;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	border-top:1px solid gray;
+}
+.calendar td {
+	font-family: verdana;
+	vertical-align: top;
+	font-size:15px;
+	height: 100px;
+	padding: 8px;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	border-top:1px solid gray;
+}
+
+.mask2 {
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	width: 100%; height: 100%;
+	opacity: 0.6;
+	z-index: 20;
+}
+
+.styletable tr {
+	background: white;
+	border: none;
+}
+.styletable td {
+	font-family: verdana;
+	font-size:10.5px;
+	border: none;
+}
+/* CALENDAR END */
+
+
+/* CALENDAR BAGONG DAGDAG START*/
+
+/* accordion header */
+#accordion2 h4 {
+    background:#71B238;
+    line-height: 14px;
+    margin:0;
+    padding:5px 5px;
+    font-size:8px;
+    font-weight:normal;
+    border:1px solid #71B238;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+	background-color:#71B238;
+}
+
+/* DAGDAG SA INFO */
+div.head6 {  /* white background */
+background-color:white;
+margin: -10px 0 -10px 0;
+width: 30.5%;
+opacity:1;
+position:absolute;
+top:190px;
+left:10.5%;
+}
+div.head7 {  /* white background */
+background-color:white;
+margin: -10px 0 -10px 0;
+width: 150%;
+opacity:1;
+position:absolute;
+top:7px;
+left:104%;
+}
+/* DAGDAG SA INFO --END-- */
+
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/success.png');
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+width:100%;
+position:relative;
+}
+

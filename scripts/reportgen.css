@@ -1,0 +1,126 @@
+/* magic sa report gen */
+/* from Mary Lou; link: http://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transitions */
+.ch-grid {
+    padding:0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+	background-color:#fefcd7;
+	
+}
+ 
+.ch-grid:after,
+.ch-item:before {
+    content: '';
+    display: table;
+}
+ 
+.ch-grid:after {
+    clear: both;
+}
+ 
+.ch-grid li {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+
+}
+
+.ch-item {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: 
+        inset 0 0 0 0 rgba(200,95,66, 0.4),
+        inset 0 0 0 16px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.ch-img-1 { 
+    background-image: url(../images/report_bprof.jpg);
+}
+.ch-img-2 { 
+    background-image: url(../images/report_bcomm.jpg);
+}
+.ch-img-3 { 
+    background-image: url(../images/report_fin.jpg);
+}
+.ch-img-4 { 
+    background-image: url(../images/report_inventory.jpg);
+}
+.ch-img-5 { 
+    background-image: url(../images/report_calendar.jpg);
+}
+.ch-img-6 { 
+    background-image: url(../images/report_directory.jpg);
+}
+.ch-img-7 { 
+    background-image: url(../images/report_demo.jpg);
+}
+.ch-info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+	left:10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(0);
+    backface-visibility: hidden;
+}
+
+.ch-info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 19px;
+    margin: 0 30px;
+    padding: 20px 0 0 0;
+    height: 100px;
+    font-family: bebas;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.3);
+}
+ 
+.ch-info p {
+    color: #fff;
+    padding: 4px;
+    font-style: italic;
+    margin: 0 10px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+ 
+.ch-info p a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: bebas;
+}
+ 
+.ch-info p a:hover {
+    color: rgba(124,252,0, 0.8);
+}
+
+.ch-item:hover {
+    box-shadow: 
+        inset 0 0 0 110px rgba(0,0,0, 0.95),
+        inset 0 0 0 16px rgba(255,255,255,0.8),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+    opacity: 1;
+    -webkit-transform: scale(1);    
+}
